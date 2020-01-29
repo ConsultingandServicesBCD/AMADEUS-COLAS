@@ -1,0 +1,34 @@
+{
+    "manifest_version":2,
+    "name":"extension L.2",
+    "omnibox": { "keyword" : "yeah" },
+    "version":"1.0",
+    "description":"extension de prueba",
+  
+    "browser_action":{
+        
+        "default_popup":"index.html"
+
+    },"content_scripts": [
+        {
+            "matches": [ "https://1a.em1.sellingplatformconnect.amadeus.com/*","https://www.em1.sellingplatformconnect.amadeus.com/*"],
+            "js": ["script.js"]
+        }
+    ],
+    "permissions":[
+        "notifications",
+        "storage",
+        "tabs",
+        "http://*/*",
+        "https://*/*",
+        "https://www.youtube.com/*"
+
+    ]
+    
+
+    
+    
+
+
+
+}

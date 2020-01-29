@@ -1,0 +1,31 @@
+header{
+display: flex;
+justify-content: center;
+}
+.herramientas{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.campos{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    margin: 10px;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    transition: all 1s;
+}
+.campos:hover{
+    background: black;
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#boxing{
+    display: flex;
+    flex-flow: column;
+}
