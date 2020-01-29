@@ -25,18 +25,19 @@ class correNuevo{
     var fuente=document.getElementsByClassName("speedModePanel")[0];
     
     if(fuente!=null||fuente!=undefined){
-
+        tempo=0;
         this.inicializarBusqueda()
 
     }else{
         tempo++
         console.log("cargando..."+tempo);
-        if(tempo===15){
+        if(tempo===20){
         
         
         
     }else{
-        setTimeout(()=> this.analisis(),2000);
+        
+        setTimeout(()=> this.analisis(),1000);
     }
 
   }
@@ -146,7 +147,7 @@ class correNuevo{
              line_DE_COMANDOS[0].click();
              line_DE_COMANDOS[0].dispatchEvent(PRESS_ENTER)
            
-           return  setTimeout(()=> new correNuevo(),1200)
+           return  setTimeout(()=> new correNuevo(),700)
         
 
         }else{
@@ -177,7 +178,7 @@ class correNuevo{
             line_DE_COMANDOS[0].click();
            
             line_DE_COMANDOS[0].dispatchEvent(PRESS_ENTER)
-            setTimeout(()=> new correNuevo(),1000);
+            setTimeout(()=> new correNuevo(),700);
             
         }
         numeroMAS++;
@@ -252,7 +253,7 @@ Pulsar_Enter_M(num){
     setTimeout(()=>{
         line_DE_COMANDOS[0].click();
         line_DE_COMANDOS[0].dispatchEvent(PRESS_ENTER)
-        setTimeout(()=> new correNuevo(),1000);
+        setTimeout(()=> new correNuevo(),700);
     },1000);
     
 }
@@ -271,7 +272,7 @@ Pulsar_Enter_QD(){
 
        line_DE_COMANDOS[0].click();
        line_DE_COMANDOS[0].dispatchEvent(PRESS_ENTER)
-       setTimeout(()=>{new correNuevo()},1000)
+       setTimeout(()=>{new correNuevo()},700)
   
     
 }
