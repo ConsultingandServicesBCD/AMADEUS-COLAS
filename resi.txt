@@ -4,3 +4,27 @@
             "js": ["js.js"]
         }
     ],
+
+function lols(){
+var consola=document.getElementById("etaskmgr_taskBar").getElementsByTagName("ul").item(1).getElementsByTagName("li").length;
+    var objetivo_consola;
+    var conta=0;
+    for(var c=0;c<=consola;c++){
+        var TIPO_consola_V=document.getElementById("etaskmgr_taskBar").getElementsByTagName("ul").item(1).getElementsByTagName("li").item(c)
+       if(TIPO_consola_V!=null||TIPO_consola_V!=undefined){
+        var TIPO_consola=document.getElementById("etaskmgr_taskBar").getElementsByTagName("ul").item(1).getElementsByTagName("li").item(c).getAttribute("class");
+        
+        var confirmacion=/selectedFile/.test(TIPO_consola);
+        if(confirmacion){
+            var LA_consola=document.getElementById("etaskmgr_taskBar").getElementsByTagName("ul").item(1).getElementsByTagName("li").item(c).getAttribute("title");
+            var get_numero_console=/(?<=.*)\d/.exec(LA_consola);
+            var numero_consola=get_numero_console[0];
+            var id_consola="cryptics"+numero_consola+"_cmd_shellbridge_shellWindow_top_left_modeString_cmdPromptInput"
+            objetivo_consola=document.getElementById(id_consola);
+            }
+       }
+        
+       
+    }
+    console.log(objetivo_consola);
+    }
